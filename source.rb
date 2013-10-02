@@ -1,3 +1,5 @@
+require 'pry'
+
 @source_text = 'My home IP address is: 127.0.0.1. 
 But that isn\'t my public IP address, that is 203.15.20.74.
 Some IP addresses like 893.239.2939.2 would be invalid.
@@ -20,3 +22,5 @@ I love the color #ccddee but I really don\'t like the color #b1dafb.
 I once painted a room #741d0d. I tried to paint a room #y729iu but that isn\'t a color. 
 '
 $source_text = @source_text
+
+# 
