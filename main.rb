@@ -29,14 +29,25 @@ end
 valid_numbers_array = []
 valid_numbers_array << valid_phone_numbers($source_text)
 
-def area_codes 
+def area_codes(codes)
+	codes.scan(/\d{5}/)
 end
+valid_area_codes_array = []
+valid_area_codes_array << area_codes($source_text)
 
-def email_addresses 
+def email_addresses(emails)
+	emails.scan(/\w{1,20}@\w{1,20}.\w{1,6}/)
 end
+valid_emails_array = []
+valid_emails_array << email_addresses($source_text)
 
-def zip_codes 
+def zip_codes (zip_codes)
+	zip_codes.scan(/\b\d{5}\b/)
 end
+valid_zip_code_array =
 
-def hex_colors 
+def hex_colors(hex) 
+	hex.scan(/#\b\w{1,6}\b/)
 end
+valid_hex_array = []
+valid_hex_array << hex_colors($source_text)
